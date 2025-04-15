@@ -15,7 +15,7 @@
       margin-top: 20px;
     }
     .note {
-      background: #4b4b4bd2;
+      background: #a1a1a1d2;
       padding: 0.625rem;
       margin-bottom: 0.625rem;
       border-radius: .5rem;
@@ -42,7 +42,7 @@
       outline: none;
       border-radius: .5rem;
       padding-left: .25rem;
-      background: #a8a8a8d2;
+      background: #dadadad2;
       font-size: large;
     }
     .btn {
@@ -56,7 +56,7 @@
       margin-top: 0.625rem;
       padding: 0.425rem;
     }
-    .edit-btn { background: #74bbf5; color: white; width: 10%; }
-    .delete-btn { background: #f3786f; color: white; width: 10% }
-    .save-btn { background: #7cb17d; color: white; width: 20%; margin-bottom: 48px; }
+    .edit-btn { background: #3d90f0; color: white; width: 10%; }
+    .delete-btn { background: #f15044; color: white; width: 10% }
+    .save-btn { background: #59ac5b; color: white; width: 20%; margin-bottom: 48px; }
     .add-btn { background: #e7782e; color: white; width: 20%; }

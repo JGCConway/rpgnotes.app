@@ -3,6 +3,9 @@ const newNoteSection = document.getElementById('new-note');
 const saveNoteBtn = document.getElementById('save-note-btn');
 const noteText = document.getElementById('note-text');
 const notesContainer = document.getElementById('notes-container');
+const downloadBtn = document.getElementById('download-notes-btn');
+const uploadInput = document.getElementById('upload-notes-input');
+const uploadBtn = document.getElementById('upload-notes-btn');
 
 function autoResize(textarea) {
   textarea.style.height = 'auto';
@@ -134,6 +137,38 @@ function saveNote() {
   }
 }
 
+function downloadNotes() {
+  const data = {
+    header: getHeader(),
+    notes: getNotes()
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'my-notes.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function uploadNotes(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      const data = JSON.parse(e.target.result);
+      if (data.header) saveHeader(data.header);
+      if (Array.isArray(data.notes)) saveNotes(data.notes);
+      loadHeader();
+      loadNotes();
+    } catch (err) {
+      alert('Invalid file format');
+    }
+  };
+  reader.readAsText(file);
+}
+
 addNoteBtn.addEventListener('click', () => {
   newNoteSection.style.display = 'block';
   noteText.focus();
@@ -149,6 +184,10 @@ noteText.addEventListener('keydown', (e) => {
 });
 
 noteText.addEventListener('input', () => autoResize(noteText));
+
+downloadBtn.addEventListener('click', downloadNotes);
+uploadBtn.addEventListener('click', () => uploadInput.click());
+uploadInput.addEventListener('change', uploadNotes);
 
 loadHeader();
 loadNotes();
