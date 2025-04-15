@@ -57,7 +57,9 @@
       padding: 0.425rem;
       align-content: center;
     }
-    .edit-btn { background: #3d90f0; color: white; min-width:10%; width:auto; }
-    .delete-btn { background: #f15044; color: white; min-width:10%; width:auto; }
-    .save-btn { background: #59ac5b; color: white; min-width:10%; width:auto; margin-bottom: 48px; }
-    .add-btn { background: #e7782e; color: white; min-width:10%; width: auto; }
+    .edit-btn { background: #3d90f0; color: white; min-width:10%; min-height: 3rem; height: auto; width:auto; }
+    .delete-btn { background: #f15044; color: white; min-width:10%; min-height: 3rem; height: auto; width:auto; }
+    .save-btn { background: #59ac5b; color: white; min-width:10%; width:auto; min-height: 3rem; height: auto; margin-bottom: 48px; }
+    .add-btn { background: #e7782e; color: white; min-width:10%; width: auto; min-height: 3rem; height: auto; }
+
+    min-height: 3rem; height: auto;
