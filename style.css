@@ -1,0 +1,62 @@
+
+    *{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    
+    body {
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+   h1 {
+        color:#e7782e;
+    }
+    #notes-container {
+      margin-top: 20px;
+    }
+    .note {
+      background: #4b4b4bd2;
+      padding: 0.625rem;
+      margin-bottom: 0.625rem;
+      border-radius: .5rem;
+      position: relative;
+    }
+    .note textarea {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 5px;
+    }
+    .note-buttons {
+      display: flex;
+      gap: 0.625rem;
+    }
+    #new-note {
+      display: none;
+      margin-top: 0.625rem;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      resize: vertical;
+      border: none;
+      outline: none;
+      border-radius: .5rem;
+      padding-left: .25rem;
+      background: #a8a8a8d2;
+      font-size: large;
+    }
+    .btn {
+      height: 3rem;
+      width: 20%;  
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color:#e7782e;
+      font-size: large;
+      margin-top: 0.625rem;
+      padding: 0.425rem;
+    }
+    .edit-btn { background: #74bbf5; color: white; width: 10%; }
+    .delete-btn { background: #f3786f; color: white; width: 10% }
+    .save-btn { background: #7cb17d; color: white; width: 20%; margin-bottom: 48px; }
+    .add-btn { background: #e7782e; color: white; width: 20%; }
