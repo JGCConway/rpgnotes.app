@@ -4,14 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Notes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <Nav class="topnav">
+    <div class="headerImage">
+        <a href="index.html"><img src="rpglogo.png" alt="QAM logo"/></a>
+    </div>
+    <div class="Navigation-Options-Parent">
+        <div class="Navigation-Options-list">
+          <button id="download-notes-btn" class="Nav-Buttons btn nav-btn">Download Notes</button>
+          <input type="file" id="upload-notes-input" accept="application/json" style="display:none">
+            <button id="upload-notes-btn" class="Nav-Buttons btn nav-btn">Upload Notes</button>
+        </div>
+    </div>
+</Nav>
+
+<div class="noteWholeComponent">
   <h1 class="header" id="renameField" onclick="editField()">Rename Me</h1>
-  <button id="add-note-btn" class="btn add-btn">Add Note</button>
-  <button id="download-notes-btn" class="btn add-btn">Download Notes</button>
-  <input type="file" id="upload-notes-input" accept="application/json" style="display:none">
-  <button id="upload-notes-btn" class="btn add-btn">Upload Notes</button>
+  <button id="add-note-btn" class="btn add-btn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+  </button>
+
+
 
   <div id="new-note">
     <textarea id="note-text"></textarea><br/>
@@ -19,7 +34,10 @@
   </div>
 
   <div id="notes-container"></div>
+</div>
+
 
 <script src="script.js"></script> 
+
 </body>
 </html>

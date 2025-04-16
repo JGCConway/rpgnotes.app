@@ -4,18 +4,67 @@
     }
     
     body {
-      padding: 20px;
-      background-color: #f0f0f0;
+      background-color: #3a3a3a;
+      margin: 0;
+      padding:0;
     }
 
    h1 {
-        color:#e7782e;
+        color:#e4e4e4;
+        font-size: 3rem;
     }
+
+    .topnav{
+      background-color: #575757;
+      top: 0vh;
+      display: flex;
+      width: 100%;
+  }
+  
+  .headerImage{
+      display: flex;
+      margin-left: 1.5vw;
+  }
+  
+  .headerImage img{
+      width: 7rem;
+      height:7rem;
+      }
+  
+  .Navigation-Options-Parent{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .Navigation-Options-list{
+      align-content: center;
+  }
+  
+  .Nav-Buttons{
+      list-style: none;
+      text-decoration: none;
+      font-size: large;
+      font-weight: 500;
+      color: #F2F2F2;
+      background-color: #e7782e;
+      padding: .4688rem;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      border-radius: 0.625rem;
+      margin-right: 3vw;
+  }
+  /*______________________________________________________________ */
+
+    .noteWholeComponent{
+      padding: 2rem;
+    }
+
     #notes-container {
-      margin-top: 20px;
+      margin-top: 1.25rem;
     }
     .note {
-      background: #a1a1a1d2;
+      background: #dfdfdfd2;
       padding: 0.625rem;
       margin-bottom: 0.625rem;
       border-radius: .5rem;
@@ -23,8 +72,8 @@
     }
     .note textarea {
       width: 100%;
-      height: 60px;
-      margin-bottom: 5px;
+      height: 3.75rem;
+      margin-bottom: .3125rem;
     }
     .note-buttons {
       display: flex;
@@ -36,7 +85,7 @@
     }
     textarea {
       width: 100%;
-      height: 80px;
+      height: 5rem;
       resize: vertical;
       border: none;
       outline: none;
@@ -46,20 +95,24 @@
       font-size: large;
     }
     .btn {
-      height: 3rem;
-      width: 10%;  
+      min-height: 3.5rem;
+      max-height: 3.5rem; 
       border: none;
-      border-radius: 4px;
+      border-radius: .25rem;
       cursor: pointer;
       background-color:#e7782e;
       font-size: large;
       margin-top: 0.625rem;
+      margin-bottom: 0.625rem;
       padding: 0.425rem;
       align-content: center;
     }
-    .edit-btn { background: #3d90f0; color: white; min-width:10%; min-height: 3rem; height: auto; width:auto; }
-    .delete-btn { background: #f15044; color: white; min-width:10%; min-height: 3rem; height: auto; width:auto; }
-    .save-btn { background: #59ac5b; color: white; min-width:10%; width:auto; min-height: 3rem; height: auto; margin-bottom: 48px; }
-    .add-btn { background: #e7782e; color: white; min-width:10%; width: auto; min-height: 3rem; height: auto; }
+    .edit-btn { background: #e7782e; color: white; min-width: 10%;  }
+    .delete-btn { background: #2b2b2b; color: white; min-width: 10%;  }
+    .save-btn { background: #59ac5b; color: white; min-width: 10%;  }
+    .add-btn { background: #e5e5e5; color: #e7782e; width: 5%;font-weight: 700}
+    .nav-btn { background: #e5e5e5; color: rgb(32, 32, 32); ; min-width: 10%;  }
 
-    min-height: 3rem; height: auto;
+    i {
+      
+    }
