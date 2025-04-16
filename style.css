@@ -107,6 +107,16 @@
       padding: 0.425rem;
       align-content: center;
     }
+    label{
+      padding: 1rem;
+      color: #e5e5e5;
+      font-weight: 600;
+    }
+
+    select{
+      font-weight: 600;
+    }
+
     .edit-btn { background: #e7782e; color: white; min-width: 10%;  }
     .delete-btn { background: #2b2b2b; color: white; min-width: 10%;  }
     .save-btn { background: #59ac5b; color: white; min-width: 10%;  }
