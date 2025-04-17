@@ -1,5 +1,5 @@
 // =======================
-// ✨ DOM ELEMENTS
+//  DOM ELEMENTS
 // =======================
 const addNoteBtn = document.getElementById('add-note-btn');
 const newNoteSection = document.getElementById('new-note');
@@ -12,7 +12,7 @@ const uploadBtn = document.getElementById('upload-notes-btn');
 const sortDropdown = document.getElementById('sort-notes');
 
 // =======================
-// 🧠 UTILITY FUNCTIONS
+//  UTILITY FUNCTIONS
 // =======================
 function parseNoteDate(str) {
   return new Date(Date.parse(str));
@@ -24,7 +24,7 @@ function autoResize(textarea) {
 }
 
 // =======================
-// 📦 STORAGE FUNCTIONS
+//  STORAGE FUNCTIONS
 // =======================
 function getNotes() {
   const raw = JSON.parse(localStorage.getItem('notes') || '[]');
@@ -57,7 +57,7 @@ function saveHeader(value) {
 }
 
 // =======================
-// 🖼️ RENDER FUNCTIONS
+//  RENDER FUNCTIONS
 // =======================
 function loadHeader() {
   const h2 = document.getElementById("renameField");
@@ -167,7 +167,6 @@ function loadNotes(sortOption = 'created-asc') {
     btnContainer.appendChild(downloadBtn);
     btnContainer.appendChild(deleteBtn);
 
-    noteEl.appendChild(timeEl);
     noteEl.appendChild(textarea);
     noteEl.appendChild(btnContainer);
     notesContainer.appendChild(noteEl);
@@ -177,7 +176,7 @@ function loadNotes(sortOption = 'created-asc') {
 }
 
 // =======================
-// ➕ INTERACTION FUNCTIONS
+//  INTERACTION FUNCTIONS
 // =======================
 function saveNote() {
   const text = noteText.value.trim();
@@ -220,7 +219,7 @@ function editField() {
 }
 
 // =======================
-// 📁 FILE HANDLING
+//  FILE HANDLING
 // =======================
 function downloadNotes() {
   const data = {
@@ -255,7 +254,7 @@ function uploadNotes(event) {
 }
 
 // =======================
-// 🚀 INIT ON LOAD
+// INIT ON LOAD
 // =======================
 window.addEventListener('DOMContentLoaded', () => {
   addNoteBtn.addEventListener('click', () => {
