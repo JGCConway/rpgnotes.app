@@ -19,25 +19,27 @@
             <button id="upload-notes-btn" class="Nav-Buttons btn nav-btn">Upload Notes</button>
         </div>
     </div>
-</Nav>
+  </Nav>
 
-<div class="noteWholeComponent">
-  <h1 class="header" id="renameField" onclick="editField()">Rename Me</h1>
-  <button id="add-note-btn" class="btn add-btn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-  </button>
+  <div class="noteWholeComponent">
+    <h1 class="header" id="renameField" onclick="editField()">Rename Me</h1>
+    <button id="add-note-btn" class="btn add-btn"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
 
+    <label for="sort-notes">Sort by:</label>
+    <select id="sort-notes" class="btn">
+      <option value="created-asc">Oldest to Newest</option>
+      <option value="created-desc">Newest to Oldest</option>
+      <option value="edited-desc">Last Edited</option>
+    </select>
 
+    <div id="new-note">
+      <textarea id="note-text"></textarea><br/>
+      <button id="save-note-btn" class="btn save-btn">Save Note</button>
+    </div>
 
-  <div id="new-note">
-    <textarea id="note-text"></textarea><br/>
-    <button id="save-note-btn" class="btn save-btn">Save Note</button>
+    <div id="notes-container"></div>
   </div>
 
-  <div id="notes-container"></div>
-</div>
-
-
-<script src="script.js"></script> 
-
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

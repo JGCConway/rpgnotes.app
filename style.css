@@ -106,8 +106,20 @@
       padding: 0.425rem;
       align-content: center;
     }
-    .edit-btn { background: #e7782e; color: white; min-width: 10%;  }
-    .delete-btn { background: #2b2b2b; color: white; min-width: 10%;  }
-    .save-btn { background: #59ac5b; color: white; min-width: 10%;  }
-    .add-btn { background: #e5e5e5; color: #e7782e; min-width: 5%; width:auto;}
-    .nav-btn { background: #e5e5e5; color: rgb(32, 32, 32); ; min-width: 10%;  }
+
+    label{
+      padding: 1rem;
+      color: #e5e5e5;
+      font-weight: 600;
+    }
+
+    select{
+      font-weight: 600;
+    }
+
+    .edit-btn { background: #e7782e; color: white; min-width: 10%;}
+    .delete-btn { background: #2b2b2b; color: white; min-width: 10%;}
+    .save-btn { background: #59ac5b; color: white; min-width: 10%;}
+    .add-btn { background: #e5e5e5; color: #e7782e; width: 5%;}
+    .nav-btn { background: #e5e5e5; color: rgb(32, 32, 32); ; min-width: 10%;}
+    .download-btn { background: #e7782e; color: white; min-width: 10%;}
