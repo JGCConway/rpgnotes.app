@@ -79,6 +79,7 @@ export function loadNotes(sortOption = 'created-asc') {
 
     const textarea = document.createElement('textarea');
     textarea.value = note.text;
+    textarea.id = 'existingtextarea';
     textarea.disabled = true;
     noteEl.appendChild(textarea);
     autoResize(textarea);
