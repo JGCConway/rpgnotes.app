@@ -1,5 +1,9 @@
 import { loadHeader, loadNotes, editField } from './ui.js';
 import { getNotes, saveNotes, getHeader, saveHeader } from './storage.js';
+window.editField = editField;
+
+// 3. Then import and mount Vue as usual
+
 
 window.addEventListener('DOMContentLoaded', () => {
   // Add Note

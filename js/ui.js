@@ -28,6 +28,7 @@ export function editField() {
   const input = document.createElement("input");
   input.type = "text";
   input.value = originalText;
+  input.id = "inputForHeader"
 
   input.onkeydown = (e) => {
     if (e.key === 'Enter') input.blur();

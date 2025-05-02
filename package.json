@@ -1,0 +1,22 @@
+{
+  "name": "rpgnotes",
+  "version": "1.0.0",
+  "description": "Passion project tool that I use as a way for me to track my notes easier at the gametable without extra features to distract me from writing my notes.",
+  "main": "js/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server . -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.4",
+    "http-server": "^14.1.1",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.2"
+  }
+}
