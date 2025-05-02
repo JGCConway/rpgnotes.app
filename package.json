@@ -17,6 +17,7 @@
     "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
-    "cypress": "^14.3.2"
+    "cypress": "^14.3.2",
+    "cypress-file-upload": "^5.0.8"
   }
 }
