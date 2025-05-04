@@ -75,7 +75,8 @@ export function loadNotes(sortOption = 'created-asc') {
     noteEl.className = 'note';
 
     const meta = document.createElement('div');
-    meta.innerHTML = `<small>Created: ${formatReadableDate(note.created)}<br/>Last Edited: ${formatReadableDate(note.edited)}</small>`;
+    meta.innerHTML = `<small id="noteCreatedID">Created: ${formatReadableDate(note.created)}</small><br><small id="noteEditedID">Last Edited: ${formatReadableDate(note.edited)}</small>`;
+    meta.id = 'timeStampsID'
     noteEl.appendChild(meta);
 
     const textarea = document.createElement('textarea');
