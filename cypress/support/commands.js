@@ -45,9 +45,9 @@ Cypress.Commands.add('editNote', (text) => {
       cy.get('#download-notes-btn').click()
   });
   // ********Download ONE Note********
-  Cypress.Commands.add('downloadOneNote', () => {
+  Cypress.Commands.add('downloadOneNote', (oneAddedNote) => {
     cy.visit('/')
-    cy.addNote('This note will be downloaded by itself')
+    cy.addNote(oneAddedNote)
     cy.get('.download-btn').should('have.text','Download')
     cy.get('.download-btn').click()
 });
